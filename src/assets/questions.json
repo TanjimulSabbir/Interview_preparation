@@ -414,3 +414,76 @@
         }
     ]
 }
+
+
+"Javascript": [
+    {"id":1,"question":"Is JavaScript single-threaded or multithreaded?","answer":"JavaScript is single-threaded. It means that it executes one operation at a time, making it synchronous. However, asynchronous operations can be achieved using features like callbacks, promises, and async/await."},
+    
+    {"id":2,"question":"How does NodeJS use in the backend? Why not others?","answer":"NodeJS is used in the backend to build scalable and high-performance server-side applications. It utilizes a non-blocking, event-driven architecture that makes it well-suited for handling many simultaneous connections. This is particularly useful for I/O-heavy tasks like handling HTTP requests. NodeJS is chosen for its efficiency and ability to handle a large number of concurrent connections."},
+    
+    {"id":3,"question":"What is the difference between cluster and child process model?","answer":"In NodeJS, the cluster module allows the creation of child processes to distribute the load across multiple CPU cores. The child process model involves creating separate instances of the NodeJS process to handle specific tasks. The cluster model, on the other hand, involves creating multiple instances of the entire application to utilize multiple CPU cores. Both aim to improve performance and scalability."},
+    
+    {"id":4,"question":"Tell me about call, bind, and apply methods?","answer":"Call, bind, and apply are methods used to manipulate the context of a function in JavaScript. Call and apply are similar; they invoke a function with a specific 'this' context and can pass arguments. Bind, however, creates a new function with a specified 'this' context but does not invoke it immediately. It is commonly used for setting the 'this' value in event handlers."},
+    
+    {"id":5,"question":"What do you know about 'this' keyword? What does it do?","answer":"'This' in JavaScript refers to the current execution context of a function. It is a special keyword that is dynamically scoped and can vary based on how the function is called. In most cases, 'this' refers to the object that owns the function, but it can behave differently in various situations."},
+    
+    {"id":6,"question":"What is the difference between callback and return?","answer":"A callback is a function passed as an argument to another function, to be executed later. It is often used in asynchronous programming. 'Return,' on the other hand, is used to end the execution of a function and can provide a value back to the calling code. Callbacks are often used to handle asynchronous operations and ensure proper execution order."},
+    
+    {"id":7,"question":"What is Higher Order Function?","answer":"A Higher Order Function is a function that takes one or more functions as arguments or returns a function as its result. These functions can manipulate other functions by modifying their behavior or extending their functionality. Examples include functions like 'map,' 'filter,' and 'reduce.'"},
+    
+    {"id":8,"question":"What is the difference between event loop and event queue?","answer":"The event loop is a continuous process that constantly checks the message queue for new events to execute. The event queue is a data structure that holds messages or events to be processed by the event loop. The event loop picks up messages from the queue and processes them one by one, ensuring asynchronous operations are handled in a non-blocking manner."},
+    
+    {"id":9,"question":"What is the data type in JavaScript?","answer":"JavaScript has six primitive data types: Undefined, Null, Boolean, Number, String, and Symbol (added in ECMAScript 6). Additionally, there is the Object data type, which includes functions, arrays, and objects."},
+    
+    {"id":10,"question":"What is 'undefined' and 'define' variable?","answer":"'Undefined' in JavaScript is a primitive value assigned to variables that are declared but not initialized. 'Define' is not a standard term in JavaScript. Perhaps you meant 'declaring' a variable, which is the act of creating a variable using 'var,' 'let,' or 'const' without assigning a value to it."},
+    
+    {"id":11,"question":"What is default parameters? Why does it use?","answer":"Default parameters in JavaScript allow you to specify default values for function parameters if no value or 'undefined' is passed. This ensures that the function behaves predictably, even if not all parameters are provided. It's particularly useful when some parameters are optional."},
+    
+    {"id":12,"question":"Is there any difference between '===' and '=='?","answer":"'===' is the strict equality operator in JavaScript, which checks both value and type equality. '==' is the loose equality operator, which performs type coercion if necessary. It's generally recommended to use '===' to avoid unexpected type conversions."},
+    
+    {"id":13,"question":"What is the JavaScript scope?","answer":"The scope in JavaScript refers to the region of code where a variable can be accessed or modified. There are two types of scope: global scope and local scope. Variables declared outside any function or block have global scope, while those declared inside a function or block have local scope."},
+    
+    {"id":14,"question":"What is the difference among global scope, block scope, functional scope, and lexical scope?","answer":"Global scope refers to variables declared outside any function or block and is accessible throughout the entire program. Block scope refers to variables declared within curly braces ('{}') and is limited to that block. Functional scope refers to variables declared inside a function. Lexical scope means that a variable's scope is determined by its location in the source code."},
+    
+    {"id":15,"question":"Is JavaScript synchronous or asynchronous? How does it work?","answer":"JavaScript is single-threaded and synchronous in nature. However, it employs asynchronous programming through features like callbacks, promises, and async/await. Asynchronous operations allow non-blocking execution, enabling the program to perform tasks concurrently without waiting for one to finish before starting another."},
+    
+    {"id":16,"question":"Tell me about ES6 advance topics? Which are you using?","answer":"ES6 (ECMAScript 2015) introduced several advanced features to JavaScript, including arrow functions, template literals, destructuring assignment, let and const declarations, classes, modules, and more. I use a variety of these features depending on the specific requirements of the project."},
+    
+    {"id":17,"question":"What do you know about prototype chain?","answer":"In JavaScript, every object has a prototype chain, which is a way to achieve inheritance. Objects inherit properties and methods from their prototype, and this chain continues until the prototype is null. The prototype chain allows objects to share functionality and helps in creating efficient, memory-saving code."},
+    
+    {"id":18,"question":"How many arguments does call, apply, bind take?","answer":"The `call` and `apply` methods take two arguments: the value of 'this' and the function arguments passed individually or as an array, respectively. The `bind` method also takes the value of 'this' as its first argument but returns a new function with the specified 'this' value bound, and any subsequent arguments are partially applied to the new function."},
+    
+    {"id":19,"question":"What is event bubbling in JavaScript?","answer":"Event bubbling is a phase in the event propagation process where the event starts from the target element and bubbles up through its ancestors in the DOM hierarchy. This allows parent elements to catch the same event, making it useful for delegating event handling to a common ancestor."},
+    
+    {"id":20,"question":"What is a recursive function?","answer":"A recursive function is a function that calls itself, either directly or indirectly, to solve a smaller instance of the same problem. It involves breaking down a problem into smaller subproblems and solving them until a base case is reached. Recursion is a powerful and elegant technique but should be used judiciously to avoid stack overflow errors."},
+    
+    {"id":21,"question":"How does the spread operator work?","answer":"The spread operator (`...`) in JavaScript is used to spread the elements of an iterable (e.g., an array or string) or the properties of an object. It creates a shallow copy of the original iterable or object. The spread operator is commonly used for array and object destructuring, combining arrays, and cloning objects."},
+    
+    {"id":22,"question":"What is closure? How does it work?","answer":"A closure is a function that retains access to variables from its outer (enclosing) scope, even after the outer function has finished executing. This allows the inner function to access and manipulate the outer function's variables. Closures are created whenever a function is defined within another function."},
+    
+    {"id":23,"question":"What is inheritance in JavaScript?","answer":"Inheritance in JavaScript allows one object to inherit properties and methods from another object. This is achieved using prototypes. Objects can share and reuse code by creating a prototype chain, where objects inherit from other objects. This helps in achieving code reusability and a clean organizational structure."},
+    
+    {"id":24,"question":"What is object inheritance?","answer":"Object inheritance in JavaScript refers to the ability of one object to inherit properties and methods from another object. Objects in JavaScript are instances of constructors, and they can inherit properties and methods from their constructor's prototype. This forms a prototype chain, allowing objects to share and reuse functionality."},
+    
+    {"id":25,"question":"How does JS code work on the browser? Explain it step by step procedure","answer":"When a JavaScript code is executed in the browser, it goes through the following steps:\n\n1. **Loading**: The browser loads the HTML file, and when encountering a script tag, it fetches and loads the JavaScript file.\n2. **Parsing**: The browser parses the JavaScript code to create an abstract syntax tree (AST).\n3. **Compilation**: The AST is compiled into machine code or bytecode by the browser's JavaScript engine.\n4. **Execution**: The compiled code is executed, and any changes to the Document Object Model (DOM) or styling are reflected on the webpage."},
+    
+    {"id":26,"question":"How do push and pop methods work?","answer":"The `push` method in JavaScript is used to add one or more elements to the end of an array, and the `pop` method is used to remove the last element from the end of an array. These methods modify the original array and return the new length of the array after the modification."},
+    
+    {"id":27,"question":"Array vs Linked List?","answer":"Arrays and linked lists are both data structures, but they have different characteristics. Arrays have a fixed size, constant time access to elements using an index, but insertion and deletion can be slower. Linked lists have dynamic size, efficient insertion and deletion, but accessing elements requires traversing the list."},
+    
+    {"id":28,"question":"What is the relation between class and object?","answer":"In object-oriented programming, a class is a blueprint or template for creating objects. Objects are instances of a class, and each object created from the class has the same structure and behavior defined by the class. The class defines the properties and methods that its objects will have."},
+    
+    {"id":29,"question":"What do you know about functional and object-oriented programming?","answer":"Functional programming (FP) and object-oriented programming (OOP) are two paradigms in programming. FP focuses on using functions to perform computations and avoiding changing state or mutable data. OOP is centered around objects that encapsulate data and behavior. JavaScript supports both paradigms, allowing developers to use a combination of functional and OOP techniques."},
+    
+    {"id":30,"question":"Why is JavaScript faster even as a single thread?","answer":"JavaScript's speed is attributed to its event-driven, non-blocking, and asynchronous nature. It uses features like the event loop, callbacks, and promises to efficiently manage tasks without waiting for blocking operations to complete. This allows JavaScript to handle multiple operations concurrently, providing the appearance of parallelism without the complexity of multithreading."},
+  
+  {"id":31,"question":"Explain about method chaining?","answer":"Method chaining is a programming technique where multiple methods are called on an object in a single line, each method returning an object that can be used for the next method call. This leads to cleaner and more concise code, enhancing readability and maintainability. It is commonly used in JavaScript with methods that modify or manipulate an object, such as array methods or jQuery methods."},
+  
+  {"id":32,"question":"Explain async/await, synchronous, asynchronous, promises? How do they work?","answer":"- Synchronous: Code executes line by line, and each operation must complete before the next one starts.\n- Asynchronous: Operations can start but not necessarily complete before moving to the next line. Callbacks or Promises are often used to handle asynchronous operations.\n- Promises: Objects representing the eventual completion or failure of an asynchronous operation. They have states (pending, fulfilled, rejected) and help manage asynchronous code.\n- async/await: Syntactic sugar for working with Promises. `async` declares an asynchronous function, and `await` is used within that function to pause execution until a Promise is resolved, improving the readability of asynchronous code."},
+  
+  {"id":33,"question":"What is the difference between slice and splice?","answer":"- `slice()`: Returns a shallow copy of a portion of an array without modifying the original array. It takes two arguments, the start, and end indices.\n- `splice()`: Modifies the contents of an array by removing or replacing existing elements and/or adding new elements. It takes three arguments, the start index, the number of elements to remove, and optional elements to add."},
+  
+  {"id":34,"question":"?","answer":"The question seems incomplete. Could you please provide more details or clarify the question?"}
+]
+
+  
