@@ -226,16 +226,6 @@
             "answer": "Babel is a JavaScript compiler that converts ECMAScript 2015+ code (ES6+) into a backward-compatible version of JavaScript that can run in older browsers. It is often used to transpile JSX code into JavaScript. A transpiler is a type of compiler that translates source code from one programming language to another, in this case, modern JavaScript to an older version."
         },
         {
-            "id": 46,
-            "question": "What is conditional rendering?",
-            "answer": "Conditional rendering in React refers to the practice of displaying different components or content based on certain conditions. It involves using conditional statements, such as `if` or ternary operators, to determine what should be rendered based on the current state or props of a component."
-        },
-        {
-            "id": 47,
-            "question": "What is the role of Fragment?",
-            "answer": "A Fragment in React is a way to group multiple children elements without adding an extra node to the DOM. It helps avoid unnecessary wrappers when returning multiple elements from a component. Fragments do not create an additional DOM element and are useful when you need to return multiple elements without introducing an extra parent container."
-        },
-        {
             "id": 48,
             "question": "How does the DOM work in React.JS?",
             "answer": "In React.JS, the DOM (Document Object Model) is manipulated through the use of a virtual DOM. The virtual DOM is a lightweight copy of the real DOM that React uses to efficiently update the actual DOM. When the state changes, React calculates the minimum changes needed and updates the virtual DOM before applying those changes to the real DOM, improving performance."
