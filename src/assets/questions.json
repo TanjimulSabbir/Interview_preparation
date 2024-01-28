@@ -159,11 +159,6 @@
             "id": 32,
             "question": "How does DOM work in React.JS?",
             "answer": "In React.js, the DOM (Document Object Model) is represented as a virtual DOM. When a component's state or props change, React calculates the minimum number of changes needed in the virtual DOM and updates only those elements. The virtual DOM changes are then efficiently reconciled with the real DOM for rendering."
-        },
-        {
-            "id": 33,
-            "question": "What is Redux-flux?",
-            "answer": "Redux and Flux are separate state management libraries/architectures. Redux is a predictable state container for JavaScript applications, while Flux is a pattern for managing state in a predictable way. They share some concepts but are distinct. Redux provides a single store with a unidirectional data flow, while Flux can have multiple stores."
         }
     ],
     "Javascript": [
