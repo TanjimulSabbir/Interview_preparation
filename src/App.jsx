@@ -10,10 +10,10 @@ function App() {
 
   return (
     <>
-      {/* <JSQuestions />
-      <ReactJSQuestions /> */}
-      <ClickHover />
-      <ClickCount />
+      <JSQuestions />
+      <ReactJSQuestions />
+      {/* <ClickHover />
+      <ClickCount /> */}
     </>
   )
 }
