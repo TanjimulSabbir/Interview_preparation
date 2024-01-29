@@ -1,14 +1,13 @@
-// var car = "Audi"
+var car = "Audi "
 
 const Product = () => {
-
-    if (true) {
-        var car = "Lambargini"
+    const device = "Apple (Mac Book Air)"
+    return function () {
+        return car + device
     }
-    console.log(car)
+
 }
 
-// console.log(car)
-const data = Product()
+console.log(Product()())
 
 
