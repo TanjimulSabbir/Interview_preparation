@@ -8,6 +8,4 @@ const Product = () => {
 
 }
 
-console.log(Product()())
-
-
+console.dir(Product())
