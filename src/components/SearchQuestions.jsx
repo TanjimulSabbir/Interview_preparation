@@ -14,18 +14,24 @@ function SearchQuestions({ setSearchText, searchText, filteredData }) {
     }, [searchText])
 
     return (
-        <div className="relative mb-24 h-full w-2/3 mx-auto">
-            <div className="fixed top-4 w-2/3 mx-auto">
+        <div className="relative mb-24 md:w-2/3 mx-auto">
+            <div className="fixed top-4 w-full md:w-2/3 mx-auto">
                 <div className="relative">
-                    <div className='relative flex items-center'>
-                        <input onChange={(event) => setSearchText(event.target.value)} className='border py-3 px-6 border-green-500 rounded-lg w-full'
+                    <div className='relative flex items-center justify-center'>
+                        <input onChange={(event) => setSearchText(event.target.value)} className='border py-3 px-6 border-sky-200 rounded-lg w-full bg-white'
                             type="text" value={searchText} placeholder='search questions' />
                         <RxCross2 onClick={handleCrossClick} className="absolute right-4 top-4 text-lg cursor-pointer" />
                     </div>
                     {
-                        open && filteredData?.length > 0 && <div className="absolute top-16 bg-black text-white rounded w-full opacity-65">
+                        open && filteredData?.length > 0 && <div className="absolute top-16 min-w-screen min-h-screen inset-0 bg-black opacity-95 rounded text-black">
                             {
-                                filteredData?.map(question => (<p key={question.id} className="py-3 px-2 my-2 rounded-md" ><a onClick={() => handleCrossClick} href={`#${question.id}`}>{question.question}</a></p>))
+                                filteredData?.map(question => (
+                                    <a key={question.id}
+                                        href={`#${question.id}`}
+                                        className="py-3 px-2 my-2 rounded-md mx-4 mt-6 bg-green-500 block"
+                                        onClick={() => setOpen(false)}>
+                                        {question.question}
+                                    </a>))
                             }
                         </div>
                     }
