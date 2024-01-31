@@ -1,35 +1,43 @@
-import './App.css'
-import JSQuestions from './components/JSQuestions'
-import ReactJSQuestions from './components/ReactJSQuestions'
+import './App.css';
+import JSQuestions from './components/JSQuestions';
+import ReactJSQuestions from './components/ReactJSQuestions';
 import SearchQuestions from './components/SearchQuestions';
 import { useEffect, useState } from 'react';
 import debounce from './components/debounce';
-import questions from "./assets/questions.json"
+import questions from "./assets/questions.json";
+
 function App() {
   const [searchText, setSearchText] = useState("");
-  const [filtetedData, setFilteredData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
+
+  const handleSearchInput = (data) => {
+    if (data.trim() == "") {
+      return;
+    }
+    const javascriptQuestions = questions.Javascript.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
+    const reactJSQuestions = questions.ReactJS.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
+
+    console.log([...javascriptQuestions, ...reactJSQuestions], "array concating")
+
+    setFilteredData([...javascriptQuestions, ...reactJSQuestions]);
+
+  }
+
+  const debouncedSearch = debounce(handleSearchInput, 500);
 
   useEffect(() => {
-    const handleSearchInput = (data) => {
-      const Javascript = questions.Javascript.filter(question => question.title.lowerCase().includes(data.lowerCase()));
-      const ReactJS = questions.ReactJS.filter(question => question.title.lowerCase().includes(data.lowerCase()));
-      setFilteredData([...Javascript, ...ReactJS])
+    if (searchText.trim() !== "") {
+      debouncedSearch(searchText);
     }
-
-
-    const data = debounce(handleSearchInput, 500)
-    if (searchText !== "") {
-      data(searchText)
-    }
-  }, [searchText])
+  }, [searchText]);
 
   return (
     <>
-      <SearchQuestions filtetedData={filtetedData} searchText={searchText} setSearchText={setSearchText} />
+      <SearchQuestions filteredData={filteredData} searchText={searchText} setSearchText={setSearchText} />
       <JSQuestions searchText={searchText} />
       <ReactJSQuestions searchText={searchText} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
