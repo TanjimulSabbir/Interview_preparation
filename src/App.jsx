@@ -11,15 +11,12 @@ function App() {
   const [filteredData, setFilteredData] = useState([]);
 
   const handleSearchInput = (data) => {
-    if (data.trim() == "") {
-      return;
-    }
     const javascriptQuestions = questions.Javascript.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
     const reactJSQuestions = questions.ReactJS.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
 
     console.log([...javascriptQuestions, ...reactJSQuestions], "array concating")
 
-    setFilteredData([...javascriptQuestions, ...reactJSQuestions]);
+    setFilteredData([...javascriptQuestions]);
 
   }
 
@@ -33,7 +30,7 @@ function App() {
 
   return (
     <>
-      <SearchQuestions filteredData={filteredData} searchText={searchText} setSearchText={setSearchText} />
+      <SearchQuestions filteredData={filteredData.length > 0 && filteredData} searchText={searchText} setSearchText={setSearchText} />
       <JSQuestions searchText={searchText} />
       <ReactJSQuestions searchText={searchText} />
     </>
