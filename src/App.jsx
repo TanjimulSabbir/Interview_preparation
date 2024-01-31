@@ -10,27 +10,32 @@ function App() {
   const [searchText, setSearchText] = useState("");
   const [filteredData, setFilteredData] = useState([]);
 
-  const handleSearchInput = (data) => {
-    const javascriptQuestions = questions.Javascript.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
-    const reactJSQuestions = questions.ReactJS.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
-
-    console.log([...javascriptQuestions, ...reactJSQuestions], "array concating")
-
-    setFilteredData([...javascriptQuestions]);
-
-  }
-
-  const debouncedSearch = debounce(handleSearchInput, 500);
-
   useEffect(() => {
-    if (searchText.trim() !== "") {
-      debouncedSearch(searchText);
+
+    const handleSearchInput = (data) => {
+
+      const javascriptQuestions = questions.Javascript.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
+
+      const reactJSQuestions = questions.ReactJS.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
+
+      console.log([...javascriptQuestions, ...reactJSQuestions], "array concating")
+
+      setFilteredData([...javascriptQuestions]);
+
+    }
+
+    if (searchText !== "") {
+      // const debouncedSearch = debounce(handleSearchInput, 500);
+      // debouncedSearch(searchText);
+      handleSearchInput(searchText)
+    } else {
+      setFilteredData([])
     }
   }, [searchText]);
 
   return (
     <>
-      <SearchQuestions filteredData={filteredData.length > 0 && filteredData} searchText={searchText} setSearchText={setSearchText} />
+      <SearchQuestions filteredData={filteredData} searchText={searchText} setSearchText={setSearchText} />
       <JSQuestions searchText={searchText} />
       <ReactJSQuestions searchText={searchText} />
     </>

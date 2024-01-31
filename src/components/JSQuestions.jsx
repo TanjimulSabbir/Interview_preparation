@@ -2,7 +2,7 @@ import questions from "../assets/questions.json"
 
 function JSQuestions() {
     return (
-        <div className="w-[80%] md:w-2/3 mx-auto ">
+        <div className="w-[80%] md:w-2/3 ml-auto md:mr-10 ">
             <h1 className="text-black text-3xl text-center py-4 bg-sky-300 rounded-2xl mt-3">Javascript Most Important Interview Questions</h1>
 
             <div className="">
