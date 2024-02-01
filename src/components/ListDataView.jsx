@@ -6,7 +6,7 @@ function ListDataView({ list }) {
                     {/* head */}
                     <thead className="border border-black">
                         <tr>
-                            <th className="border border-black p-3">Serial No.</th>
+                            <th className="border border-black p-3 ">Serial No.</th>
                             <th className="border border-black p-3">{list.listName}</th>
                         </tr>
                     </thead>
