@@ -1,10 +1,9 @@
 import ListDataView from "./ListDataView";
 
 function ListView({ lists }) {
-    console.log(lists?.listData, "from js question")
     return (
         <>
-            <div className="overflow-x-auto">
+            <div className="flex flex-col md:flex-row gap-10 justify-center">
                 {lists?.map(list => <ListDataView key={list.listId} list={list}></ListDataView>)}
             </div>
         </>
