@@ -335,7 +335,7 @@
         {
             "id": 35,
             "question": "What is the difference between primitive and non-primitive data types in javascript?",
-            "answer": "",
+            "answer": "JavaScript has six primitive data types: Undefined, Null, Boolean, Number, String, and Symbol (added in ECMAScript 6). Additionally, there is the Object data type, which includes functions, arrays, and objects.",
             "lists": [
                 {
                     "listId": 1,

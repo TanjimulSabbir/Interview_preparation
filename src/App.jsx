@@ -20,7 +20,7 @@ function App() {
 
       console.log([...javascriptQuestions, ...reactJSQuestions], "array concating")
 
-      setFilteredData([...javascriptQuestions]);
+      setFilteredData([...javascriptQuestions, ...reactJSQuestions]);
 
     }
 
