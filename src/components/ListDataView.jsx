@@ -1,23 +1,13 @@
 function ListDataView({ list }) {
     return (
-        <div className="my-10">
-            {/* <p className="border-x border-t border-black text-center bg-rose-400">
-                {list.listName}
-            </p>
-            {list?.listData?.map((data, index) => (
-                <tr key={index} className="border border-black">
-                    <th className="border border-black p-3">{index + 1}</th>
-                    <td className="border border-black pl-4">{data}</td>
-                </tr>
-            ))
-            } */}
-
-            <div className="overflow-x-auto">
+        <>
+            <div className="overflow-x-auto my-10">
                 <table className="table">
                     {/* head */}
-                    <thead>
+                    <thead className="border border-black">
                         <tr>
-                            {list.listName}
+                            <th className="border border-black p-3">Serial No.</th>
+                            <th className="border border-black p-3">{list.listName}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,7 +22,7 @@ function ListDataView({ list }) {
                     </tbody>
                 </table>
             </div>
-        </div>
+        </>
     )
 }
 
