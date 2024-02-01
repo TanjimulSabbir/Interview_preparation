@@ -6,11 +6,8 @@ function ListView({ lists }) {
         <>
             <div className="overflow-x-auto">
                 <table className="table">
-                    <tbody className="border border-black">
-                        <tr>
-                            {lists?.map(list => (<th key={list.listId} >{list.listName}</th>))}
-                        </tr>
-                        {lists?.map(list => <ListDataView key={list.listId} listData={list.listData} />)}
+                    <tbody>
+                        {lists?.map(list => <ListDataView className="my-3" key={list.listId} list={list}></ListDataView>)}
                     </tbody>
                 </table>
             </div>
