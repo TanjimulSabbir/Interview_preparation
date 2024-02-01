@@ -194,7 +194,7 @@
         },
         {
             "id": 7,
-            "question": "What is Higher Order Function?",
+            "question": "What is higher order function?",
             "answer": "A Higher Order Function is a function that takes one or more functions as arguments or returns a function as its result. These functions can manipulate other functions by modifying their behavior or extending their functionality. Examples include functions like 'map,' 'filter,' and 'reduce.'"
         },
         {
@@ -205,7 +205,7 @@
         {
             "id": 9,
             "question": "What is the data type in JavaScript?",
-            "answer": "JavaScript has six primitive data types: Undefined, Null, Boolean, Number, String, and Symbol (added in ECMAScript 6). Additionally, there is the Object data type, which includes functions, arrays, and objects."
+            "answer": "A data type determines the type of variable. JavaScript has six primitive data types: Undefined, Null, Boolean, Number, String, and Symbol (added in ECMAScript 6). Additionally, there is the Object data type, which includes functions, arrays, and objects."
         },
         {
             "id": 10,
@@ -326,6 +326,42 @@
             "id": 33,
             "question": "What is the difference between slice and splice?",
             "answer": "- `slice()`: Returns a shallow copy of a portion of an array without modifying the original array. It takes two arguments, the start, and end indices.\n- `splice()`: Modifies the contents of an array by removing or replacing existing elements and/or adding new elements. It takes three arguments, the start index, the number of elements to remove, and optional elements to add."
+        },
+        {
+            "id": 34,
+            "question": "What is hoisting in javascript?",
+            "answer": "Hoisting is a javascript behavior where functions and variable declarations are moved to the top of their respective scopes during the compilation phase."
+        },
+        {
+            "id": 35,
+            "question": "What is the difference between primitive and non-primitive data types in javascript?",
+            "answer": "",
+            "lists": [
+                {
+                    "listId": 1,
+                    "listName": "Primitive",
+                    "listData": [
+                        "Number, string, Boolean, undefined, null are primitive data types",
+                        "Primitive data types can hold only single value",
+                        "Primitive data types are immutable, meaning their values, once assigned, cannot be changed.In a nutshell, primitive value takes new memory location if it's try to be modified."
+                    ],
+                    "url": [
+                        "https://i.ibb.co/vsVjQjr/Primitive.png"
+                    ]
+                },
+                {
+                    "listId": 2,
+                    "listName": "Non-primitive",
+                    "listData": [
+                        "Object, array, function, date, RegExp are non-primitive data types",
+                        "Non-primitive data types can hold multiple values and method",
+                        "Non-primitive data types are mutable and their values can be changed. When values are changed, it's takes previous memory location."
+                    ],
+                    "url": [
+                        "https://i.ibb.co/MDbPnyW/Non-primitive.png"
+                    ]
+                }
+            ]
         }
     ]
 }
