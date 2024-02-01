@@ -5,11 +5,7 @@ function ListView({ lists }) {
     return (
         <>
             <div className="overflow-x-auto">
-                <table className="table">
-                    <tbody>
-                        {lists?.map(list => <ListDataView className="my-3" key={list.listId} list={list}></ListDataView>)}
-                    </tbody>
-                </table>
+                {lists?.map(list => <ListDataView key={list.listId} list={list}></ListDataView>)}
             </div>
         </>
     )
