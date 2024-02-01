@@ -1,4 +1,5 @@
 import questions from "../assets/questions.json"
+import ListView from "./ListView";
 
 function JSQuestions() {
     return (
@@ -14,6 +15,7 @@ function JSQuestions() {
                             </div>
                             <div className="nunito">
                                 <p>{question.answer}</p>
+                                <ListView lists={question.lists} />
                             </div>
                             <small className="text-green-600 text-end text-xs flex items-end justify-end">Javascript</small>
                         </div>
