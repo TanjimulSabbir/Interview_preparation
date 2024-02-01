@@ -9,7 +9,7 @@ function JSQuestions() {
             <div className="">
                 {questions.Javascript.map(question => {
                     return (
-                        <div id={question.id} key={question.id} className="my-3 bg-gray-300 rounded-2xl py-8 px-4">
+                        <div id={question.question} key={question.id} className="my-3 bg-gray-300 rounded-2xl py-8 px-4">
                             <div className="text-xl md:text-3xl mb-4 nunito">
                                 <h2>{question.id}. {question.question}</h2>
                             </div>

@@ -25,12 +25,12 @@ function SearchQuestions({ setSearchText, searchText, filteredData }) {
                     {
                         open && filteredData?.length > 0 && <div className="absolute top-16 min-w-screen min-h-screen inset-0 bg-black opacity-95 rounded text-black">
                             {
-                                filteredData?.map(question => (
-                                    <a key={question.id}
-                                        href={`#${question.id}`}
+                                filteredData?.map((question, index) => (
+                                    <a key={index+1}
+                                        href={`#${question.question}`}
                                         className="py-3 px-2 my-2 rounded-md mx-4 mt-6 bg-green-500 block"
                                         onClick={() => setOpen(false)}>
-                                        {question.question}
+                                        {question.id}.  {question.question}
                                     </a>))
                             }
                         </div>
