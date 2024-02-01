@@ -18,7 +18,7 @@ function App() {
 
       const reactJSQuestions = questions.ReactJS.filter(question => question.question?.toLowerCase().includes(data.toLowerCase()));
 
-      console.log([...javascriptQuestions, ...reactJSQuestions], "array concating")
+      // console.log([...javascriptQuestions, ...reactJSQuestions], "array concating")
 
       setFilteredData([...javascriptQuestions, ...reactJSQuestions]);
 
