@@ -14,7 +14,7 @@ function JSQuestions() {
                                 <h2>{question.id}. {question.question}</h2>
                             </div>
                             <div className="nunito">
-                                <p>{question.answer}</p>
+                                <p className="mb-4">{question.answer}</p>
                                 <ListView lists={question.lists} />
                             </div>
                             <small className="text-green-600 text-end text-xs flex items-end justify-end">Javascript</small>

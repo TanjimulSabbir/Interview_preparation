@@ -392,7 +392,7 @@
                         "IndexOf()",
                         "find()",
                         "filter()",
-                        "Slice()"
+                        "slice(): The slice method is used get a subset of the array from the start index to the end index (end element will not be included). slice method takes 2 values, start and end index like as 'slice(1, 4)'. (N.B. splice method don't include the end element when slicing)"
                     ],
                     "url": []
                 },
@@ -400,7 +400,7 @@
                     "listId": 2,
                     "listName": "Add",
                     "listData": [
-                        "push()",
+                        "push(). Push method modify the original array itself",
                         "concat()"
                     ],
                     "url": []
@@ -411,7 +411,7 @@
                     "listData": [
                         "pop()",
                         "shift()",
-                        "splice()"
+                        "splice(): The splice method is used to add, remove, or replace elements in an array. e.g. {'array.splice( 'startIndex', 'deleteCount', 'addedValues')'}"
                     ],
                     "url": []
                 },
@@ -419,8 +419,8 @@
                     "listId": 4,
                     "listName": "Modify",
                     "listData": [
-                        "map()",
-                        "forEach()"
+                        "map(): The map() method is used when you want to modify each element of an array and creat a new array with the modified values",
+                        "forEach(): The forEach() method is used when you want to perform some operation on each element of an array without creating a new array."
                     ],
                     "url": []
                 },
@@ -442,7 +442,21 @@
             "url": ""
         },
         {
-            "id": 37,
+            "id": 40,
+            "question": "what is Array Destructuring in javascript?",
+            "answer": "",
+            "lists": [
+                {
+                    "listId": 1,
+                    "listName": "Get",
+                    "listData": [],
+                    "url": []
+                }
+            ],
+            "url": ""
+        },
+        {
+            "id": 39,
             "question": "",
             "answer": "",
             "lists": [
