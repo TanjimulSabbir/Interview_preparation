@@ -3,7 +3,6 @@ import JSQuestions from './components/JSQuestions';
 import ReactJSQuestions from './components/ReactJSQuestions';
 import SearchQuestions from './components/SearchQuestions';
 import { useEffect, useState } from 'react';
-import debounce from './components/debounce';
 import questions from "./assets/questions.json";
 
 function App() {
