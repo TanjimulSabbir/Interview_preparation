@@ -220,7 +220,7 @@
         {
             "id": 12,
             "question": "Is there any difference between '===' and '=='?",
-            "answer": "'===' is the strict equality operator in JavaScript, which checks both value and type equality. '==' is the loose equality operator, which performs type coercion if necessary. It's generally recommended to use '===' to avoid unexpected type conversions."
+            "answer": "'===' is the strict equality operator in JavaScript, which checks both value and type equality. '==' is the loose equality operator, which performs type coercion after type coercion. It Just checks values not type of values. It's generally recommended to use '===' to avoid unexpected type conversions."
         },
         {
             "id": 13,
@@ -362,6 +362,98 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": 36,
+            "question": "What is type coercion in javascript?",
+            "answer": "Type coercion is the automatic convention of values from one data type to another during certain operations or comparisons. string+number= string, number+boolean(true=1,false=0)=number, boolean+ null=1, string+whatever=string"
+        },
+        {
+            "id": 37,
+            "question": "What are the types of conditions statements in Javascript?",
+            "answer": "If/else statements, Ternary operator, Switch statements",
+            "url": ""
+        },
+        {
+            "id": 38,
+            "question": "What is the difference between spread and rest operator in javascript?",
+            "answer": "The spread operator is used to expand or spread elements from an iterable (such as an array, string or object) into individual elements. The rest operator is used in function parameters to collect all remaining arguments into an array.",
+            "url": ""
+        },
+        {
+            "id": 39,
+            "question": "What are Array in JS? How to get add && remove elements from arrays?",
+            "answer": "An array is a data type that allows to store multiple values in single variable.",
+            "lists": [
+                {
+                    "listId": 1,
+                    "listName": "Get",
+                    "listData": [
+                        "IndexOf()",
+                        "find()",
+                        "filter()",
+                        "Slice()"
+                    ],
+                    "url": []
+                },
+                {
+                    "listId": 2,
+                    "listName": "Add",
+                    "listData": [
+                        "push()",
+                        "concat()"
+                    ],
+                    "url": []
+                },
+                {
+                    "listId": 3,
+                    "listName": "Remove",
+                    "listData": [
+                        "pop()",
+                        "shift()",
+                        "splice()"
+                    ],
+                    "url": []
+                },
+                {
+                    "listId": 4,
+                    "listName": "Modify",
+                    "listData": [
+                        "map()",
+                        "forEach()"
+                    ],
+                    "url": []
+                },
+                {
+                    "listId": 5,
+                    "listName": "Others",
+                    "listData": [
+                        "join()",
+                        "length",
+                        "sort()",
+                        "reverse()",
+                        "reduce()",
+                        "some()",
+                        "every()"
+                    ],
+                    "url": []
+                }
+            ],
+            "url": ""
+        },
+        {
+            "id": 37,
+            "question": "",
+            "answer": "",
+            "lists": [
+                {
+                    "listId": 1,
+                    "listName": "Get",
+                    "listData": [],
+                    "url": []
+                }
+            ],
+            "url": ""
         }
     ]
 }
