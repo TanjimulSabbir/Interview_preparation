@@ -14,7 +14,7 @@ function SearchQuestions({ setSearchText, searchText, filteredData }) {
     }, [searchText])
 
     return (
-        <div className="relative mb-16 md:w-2/3 mx-auto">
+        <div className="relative mb-16 md:w-2/3 mx-auto textFont">
             <div className="fixed top-4 w-full md:w-2/3 mx-auto">
                 <div className="relative">
                     <div className='relative flex items-center justify-center w-[260px] mx-auto'>

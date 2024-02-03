@@ -1,7 +1,9 @@
-.lora {
-    font-family: 'Lora', serif;
+.HeadingFont {
+    font-family: 'Merriweather', serif;
 }
 
-.nunito {
-    font-family: 'Roboto Slab', serif;
+.textFont {
+    font-family: 'Raleway', sans-serif;
 }
+
+

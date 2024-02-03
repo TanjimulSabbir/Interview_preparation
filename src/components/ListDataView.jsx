@@ -5,7 +5,7 @@ function ListDataView({ list }) {
 
             {list?.listData?.map((data, index) => (
                 <div key={index} className="py-3">
-                    <p> <span className="font-medium">{index + 1}.</span> {data}</p>
+                    <p> <span className="font-bold">{index + 1}.</span> {data}</p>
                 </div>
             ))
             }

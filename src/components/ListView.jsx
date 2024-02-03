@@ -1,9 +1,9 @@
 import ListDataView from "./ListDataView";
 
-function ListView({ lists }) {
+function ListView({ lists, listLength }) {
     return (
         <>
-            <div className="flex flex-col md:flex-row gap-10 justify-center">
+            <div className={`flex flex-col md:${listLength <= 2 && "flex-row"} gap-10 justify-center`}>
                 {lists?.map(list => <ListDataView key={list.listId} list={list}></ListDataView>)}
             </div>
         </>
