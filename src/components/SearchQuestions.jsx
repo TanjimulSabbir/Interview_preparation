@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 
-function SearchQuestions({ setSearchText, searchText, filteredData }) {
+function SearchQuestions({ setSearchText, searchText, filteredData}) {
     const [open, setOpen] = useState(true)
 
     const handleCrossClick = () => {
