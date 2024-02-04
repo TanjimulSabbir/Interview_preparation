@@ -484,9 +484,21 @@
         ]
     },
     {
-        "id": 39,
-        "question": "",
-        "answer": "",
+        "id": 42,
+        "question": "What is loop? Show me different types of loops.",
+        "answer": "For.....loop, while loop, do.....while loop, for.....of loop, for.....in loop;. for.....of loop used for an array But for.....in loop used both of array and object.",
+        "url": ""
+    },
+    {
+        "id": 44,
+        "question": "What is function expression in javascript?",
+        "answer": "A function expression is a way to define a function by assing it as a variable.",
+        "url": ""
+    },
+    {
+        "id": 45,
+        "question": "What is callback function in javascript?",
+        "answer": "A callback function is a function that is passed as an argument to another function.",
         "url": ""
     }
 ]
