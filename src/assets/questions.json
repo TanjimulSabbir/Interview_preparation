@@ -444,30 +444,50 @@
         {
             "id": 40,
             "question": "what is Array Destructuring in javascript?",
-            "answer": "",
-            "lists": [
-                {
-                    "listId": 1,
-                    "listName": "Get",
-                    "listData": [],
-                    "url": []
-                }
-            ],
+            "answer": "Array destructuring allows you to extract elements from an array and assign them to individual variables in a single statement. Array desctructuring is introduced in ECMAScript 6 (ES6).",
             "url": ""
         },
         {
-            "id": 39,
-            "question": "",
-            "answer": "",
+            "id": 41,
+            "question": "What are array-like objects in Javascript?",
+            "answer": "Array-like objects are that have indexed elements and a length property, similar to arrays, but they may not have all the methods of arrays like push(), pop() and others.    (2) The result of certain DOM queries, like document.getElementsByTagName or document.querySelectorAll, returns a node list, which is array-like.                                   (3) Strings can be treated as array-like objects, as each character in a string can be accessed using indices.",
+            "url": "",
             "lists": [
                 {
                     "listId": 1,
-                    "listName": "Get",
-                    "listData": [],
-                    "url": []
-                }
-            ],
-            "url": ""
-        }
-    ]
+                    "listName": "Arguments Object:",
+                    "listData": [
+                        "The arguments object available inside functions holds all the parameters passed to the function. It has a length property and can be accessed using indices.",
+                        "The arguments object is not available in arrow functions. Arrow functions do not have their own arguments object. If you try to use arguments inside an arrow function, it will refer to the arguments of the enclosing regular function (if any), not the arrow function itself.",
+                        
+                        "function example() {\\n  console.log(arguments); // Arguments object\\n  console.log(arguments.length); // Length property\\n  console.log(arguments[0]); // Accessing elements using indices\\n}"
+                ],
+                "url": []
+            },
+            {
+                "listId": 2,
+                "listName": "DOM Node Lists",
+                "listData": [
+                    "The result of certain DOM queries, like document.getElementsByTagName or document.querySelectorAll, returns a node list, which is array-like."
+                ],
+                "url": []
+            },
+            {
+                "listId": 3,
+                "listName": "Strings",
+                "listData": [
+                    "Strings can be treated as array-like objects, as each character in a string can be accessed using indices.",
+                    "const str = 'Hello'; console.log(str.length); console.log(str[0]);"
+                ],
+                "url": []
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "question": "",
+        "answer": "",
+        "url": ""
+    }
+]
 }
