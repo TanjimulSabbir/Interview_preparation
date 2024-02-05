@@ -78,8 +78,8 @@ for (let valhallah of forOfData) {
 //     return x + y;
 // })(4, 5));
 
-// callback funtion
 
+// callback funtion
 const myFunc = (data, func) => {
     return func(data)
 }
@@ -88,41 +88,17 @@ const add = (data) => {
     return data.reduce((total, currentValue) => total + currentValue, 0)
 }
 
-const subtraction = (data) => {
+const subtract = (data) => {
     return data.reduce((total, currentValue) => total - currentValue, 0)
 }
 
 const multiply = (data) => {
-    return data.reduce((total, currentValue) => total * currentValue, 0)
+    return data.reduce((total, currentValue) => total * currentValue, 1)
 }
-const divided = (data) => {
-    return data.reduce((total, currentValue) => total / currentValue, 0)
+const divide = (data) => {
+    return data.reduce((total, currentValue) => total / currentValue)
 }
 
-// const callBackFunc = (a, b, type) => {
-//     let result = 0;
-//     switch (type) {
-//         case "add":
-//             result = a + b
-//             break;
-//         case "subtraction":
-//             result = a - b
-//             break;
-//         case "multiple":
-//             result = a * b
-//             break;
-//         case "divided":
-//             result = a / b
-//             break;
+const result = myFunc([1, 2, 3,4], divide);
 
-//         default:
-//             result = 0;
-//             break;
-//     }
-//     return result;
-// }
-
-const result = myFunc([1, 2, 3, 4, 5, 6, 7, 8, 9], add);
-
-// const result = callBackFunc(2, 3, "multiple");
 console.log(result, "result")
