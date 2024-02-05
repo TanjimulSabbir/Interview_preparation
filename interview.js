@@ -88,17 +88,17 @@ const add = (data) => {
     return data.reduce((total, currentValue) => total + currentValue, 0)
 }
 
-const subtraction = (data) => {
+const subtract = (data) => {
     return data.reduce((total, currentValue) => total - currentValue, 0)
 }
 
 const multiply = (data) => {
     return data.reduce((total, currentValue) => total * currentValue, 1)
 }
-const divided = (data) => {
+const divide = (data) => {
     return data.reduce((total, currentValue) => total / currentValue)
 }
 
-const result = myFunc([1, 2, 3,4], divided);
+const result = myFunc([1, 2, 3,4], divide);
 
 console.log(result, "result")
