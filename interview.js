@@ -101,4 +101,4 @@ const divide = (data) => {
 
 const result = myFunc([1, 2, 3,4], divide);
 
-console.log(result, "result")
+console.log(result, "result");
